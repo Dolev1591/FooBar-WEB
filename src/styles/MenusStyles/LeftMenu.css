@@ -1,0 +1,84 @@
+body {
+align-items: start;
+}
+
+.user-pic-side img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.left-side-navbar {
+  position: fixed;
+  top: 56px;
+  padding-top: 12px ;
+  padding-right: 10px;
+  width: 350px;
+  /* max-width: 300px;
+  min-width: 200px; */
+  background-color: rgb(240, 242, 245);
+  height: 100%;
+  max-height: calc(100% - 56px); /* 100% viewport height minus the top margin */
+  /* Enable vertical scrolling */
+  overflow-y: auto;
+}
+img {
+  margin-top: 8px;
+  width: 32px;
+  height: 32px;
+}
+.side-bar-link {
+  margin-left: 10px;
+  padding-top: 16px;
+  padding-left: 10px;
+  /* background-color: white; */
+  display: flex;
+  /* justify-content: left; */
+  flex-direction: row;
+  /* align-items: start; */
+  height: 80px;
+  font-size: 10px;
+  font-weight: 500;
+  cursor: not-allowed;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.side-bar-link:hover {
+  background-color: rgb(204, 204, 204);
+}
+.icon-info {
+  padding-top: 4px;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.btns-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  align-items: flex-start;
+}
+.btns-wrapper button {
+  padding-left: 12px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.3s;
+  
+}
+.side-bar-link .user-pic-side img {
+  border-radius: 50%; /* Make the image circular */
+}
+
+
+
+
+@media (max-width: 1270px) {
+  /* Hide notifications and messages numbers */
+  .left-side-navbar {
+    display: none;
+  }
+}
